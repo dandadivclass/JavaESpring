@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name = "tbl_usuarios")
+@Table(name = "TBL_USUARIOS")
 @Getter  // lombok criando métodos get
 @Setter  // métodos set
 @NoArgsConstructor  // construtor default

@@ -1,15 +1,11 @@
-package br.com.fiap.calorias.model;
+package br.com.fiap.contatos.model;
 
 import jakarta.persistence.*;
-import lombok.Getter;
-import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
 
-@Setter
-@Getter
 @Entity
 @Table(name = "tbl_contatos")
 public class Contato {
@@ -30,6 +26,38 @@ public class Contato {
 
     @Column(name = "data_nascimento")
     private LocalDate dataNasc;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public LocalDate getDataNasc() {
+        return dataNasc;
+    }
+
+    public void setDataNasc(LocalDate dataNasc) {
+        this.dataNasc = dataNasc;
+    }
 
     @Override
     public boolean equals(Object o) {   // método que checa se um objeto tem os mesmos campos que outro em memória
