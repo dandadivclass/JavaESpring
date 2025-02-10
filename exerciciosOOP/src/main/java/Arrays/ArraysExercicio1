@@ -1,0 +1,44 @@
+O exercício é o seguinte:
+
+### **Exercício 1: Soma dos Elementos**
+
+Crie um programa que leia 10 números inteiros e armazene-os em um array. Em seguida, calcule e imprima a soma de todos os elementos do array.
+
+
+Inicialmente, eu planejava apenas utilizar de Arrays para compor o desafio (tópico que estou reforçando), mas ao longo do código pensei que poderia incrementar um pouco com
+Herança e Polimorfismo.
+
+Classes:
+ArraysExercicio1 e ArraysExercicio1Heranca
+
+A Classe ArraysExercicio1 contém:
+Um atributo, que é um Array de elementos do tipo inteiro
+Um construtor, que espera por um Array de inteiros
+
+Métodos:
+iniciarJogo() é uma frase que explica como o jogo funciona
+
+somaDeElementos() calcula a soma dentro de um bloco for-each, a cada iteração, na variável numero(índice), é incrementado o valor que numero representa
+dentro do Array (o valor do elemento dentro de cada índice)
+
+vamosConferir() recebe do usuário o valor que ele obteve ao somar os números do Array, existe também uma condição que valida se esse número
+recebido é igual ao valor real da soma que foi feita pelo somaDeElementos()
+
+resultado() e agradecimentos() são frases que guiam o usuário durante o jogo
+
+Para o jogo funcionar, nós devemos instanciar um objeto no Main, e inicializar também o Array de inteiros, pois na instanciação do objeto
+devemos passá-lo como parâmetro.
+Após isso, estamos livres para utilizar todos os métodos do jogo
+
+
+A Classe ArraysExercicio1Heranca é classe filha da ArraysExercicio1, sendo assim ela pode utilizar de todos os seus métodos em sua instanciação,
+utilizando do polimorfismo, alguns métodos que a classe filha herda da superclasse, foram sobrescritos para fazer sentido na nova dinâmica
+do jogo: agora não estamos apenas somando, estamos utilizando da divisão para obter a média dos números dentro do Array!
+Alguns métodos não foram sobrescritos, como o agradecimentos(), que se manteve com a lógica e estrutura da superclasse, sendo totalmente
+herdado
+
+Assim, as estruturas utilizadas foram:
+Encapsulamento (protected, passando então a visibilidade de atributos de classe mãe para a classe filha)
+Arrays
+Herança
+Polimorfismo

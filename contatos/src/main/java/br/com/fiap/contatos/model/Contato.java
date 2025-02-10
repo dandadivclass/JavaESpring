@@ -7,7 +7,7 @@ import java.util.Objects;
 
 
 @Entity
-@Table(name = "tbl_contatos")
+@Table(name = "TBL_CONTATOS")
 public class Contato {
 
     @Id
@@ -18,7 +18,7 @@ public class Contato {
     @SequenceGenerator(
             name = "CONTATOS_SEQ",
             sequenceName = "CONTATOS_SEQ",
-            allocationSize = 50
+            allocationSize = 1
     )
     private Long id;
     private String nome;
